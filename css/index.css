@@ -48,3 +48,71 @@ table {
 }
 
 /* ----------- RESET ABOVE THIS LINE ---------- */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+body {
+  background-color: #FBFFFB;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav a {
+  font-size: 2rem;
+  padding: 0 3rem;
+}
+header {
+  background-image: url("../images/header.jpg");
+  height: 65vw;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: .9;
+  background-color: #FBFFFB;
+}
+header nav div {
+  display: flex;
+  flex-direction: row;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  height: 100%;
+}
+nav img {
+  width: 9rem;
+}
+h1 {
+  display: inline-block;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+h2 {
+  font-size: 4rem;
+}
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+button a {
+  background: white;
+  padding: 2rem;
+  border: 1px solid gray;
+  text-decoration: none;
+  color: #266035;
+  font-size: 2rem;
+}
+
+
+#plants img {
+  width: 50%;
+}
