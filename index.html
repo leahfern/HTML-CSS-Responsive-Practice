@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Add Google Fonts here-->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
     <!--Link your stylesheet here-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Document</title>
+    
 </head>
 <body>
   <header id="top">
@@ -20,9 +22,9 @@
         <a href="#contact">Contact</a>
       </div>
     </nav>
-    <div>
+    <div class='header-content'>
       <h1>The Watering Can</h1>
-      <button><a href="#plants">Shop Our Indoor Plant Sale!</a></button>
+      <a href="#plants" class='button'>Shop Our Indoor Plant Sale!</a>
     </div>
   </header>
   <section id="about">
@@ -32,40 +34,49 @@
   <section id ="plants">
       <h2>Our Plants</h2>
       <div class="shop-plants">
-          <img src="images/succulants.jpg">
-          <h3>Succulents</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid ut ipsam. Neque, veniam culpa. Nulla, architecto cum nam ratione ea dicta accusamus a explicabo obcaecati officia ipsum ducimus doloribus?</p>
+          <div class="plants-image" id="succulents"></div>
+          <div class="plants-text">
+            <h3>Succulents</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid ut ipsam. Neque, veniam culpa. Nulla, architecto cum nam ratione ea dicta accusamus a explicabo obcaecati officia ipsum ducimus doloribus?</p>
+            <a href="#">Shop Now!</a>
+          </div>
       </div>
       <div class="shop-plants">
+        <div class="plants-text">
           <h3>Cacti</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid ut ipsam. Neque, veniam culpa. Nulla, architecto cum nam ratione ea dicta accusamus a explicabo obcaecati officia ipsum ducimus doloribus?</p>
-          <img src="images/cacti.jpg">
+          <a href="#">Shop Now!</a>
+        </div>
+        <div class="plants-image" id="cacti"></div>
       </div>
       <div class="shop-plants">
-          <img src="images/tropicals.jpg">
+        <div class="plants-image" id="tropicals"></div>
+        <div class="plants-text">
           <h3>Tropicals</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid ut ipsam. Neque, veniam culpa. Nulla, architecto cum nam ratione ea dicta accusamus a explicabo obcaecati officia ipsum ducimus doloribus?</p>
+          <a href="#">Shop Now!</a>
+        </div>
       </div>
-  </section id=>
+  </section>
   <section id = "contact">
-      <h4>Get In Touch!</h4>
-      <div>
+      <h4>Get In Touch !</h4>
+      <div class="contact-text">
           <h5>Find us here:</h5>
           <address>
               <p>
-                  123 plant lane
-                  Bloomfield Ontario,
+                  123 plant lane<br>
+                  Bloomfield Ontario,<br>
                   Canada L2G 0X7
               </p>
               <p>
-                <a href="phone:1-613-978-8282"></a><br>
-                <a href="email:info@thewateringcan.ca"></a><br>
-                @thewateringcan on the socials
+                <a href="phone:1-613-978-8282">+1-613-978-8282</a><br>
+                <a href="email:info@thewateringcan.ca">info@thewateringcan.ca</a><br>
+                <span>@thewateringcan on the socials</span>
               </p>
           </address>
       </div>
-      <div>
-
+      <div class="shop">
+        <img src="images/shop.jpg">
       </div>
   </section>
 </body>

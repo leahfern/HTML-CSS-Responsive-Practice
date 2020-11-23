@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -48,9 +48,17 @@ table {
 }
 
 /* ----------- RESET ABOVE THIS LINE ---------- */
+
+/* FONTS */
+
 html {
   box-sizing: border-box;
   font-size: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Oxygen', sans-serif;
 }
 body {
   background-color: #FBFFFB;
@@ -58,12 +66,15 @@ body {
   margin: 0 auto;
 }
 nav a {
-  font-size: 2rem;
-  padding: 0 3rem;
+  font-size: 1.7rem;
+  margin: 0 3rem;
+  color: #266035;
 }
 header {
   background-image: url("../images/header.jpg");
-  height: 65vw;
+}
+header, #about {
+  height: 55rem;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,41 +89,153 @@ header nav {
 header nav div {
   display: flex;
   flex-direction: row;
+  margin-right: 2rem;
 }
-header div {
+.header-content {
+  height: 47rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   justify-content: center;
-  height: 100%;
+  align-items: center;
 }
 nav img {
-  width: 9rem;
+  width: 7rem;
+  margin-left: 2rem;
 }
 h1 {
   display: inline-block;
-  font-size: 5rem;
-  color: white;
+  font-size: 4.5rem;
+  letter-spacing: .33rem;
+  color: #FBFFFB;
   text-align: center;
+  margin-bottom: 2rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 3rem 0;
+  color: #266035
 }
-button {
-  padding: 0;
-  border: none;
-  background: none;
+
+p {
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 1.7;
 }
-button a {
-  background: white;
-  padding: 2rem;
+
+a.button {
+  background-color: #FBFFFB;
+  padding: 1.5rem 2rem;
   border: 1px solid gray;
-  text-decoration: none;
   color: #266035;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+}
+a {
+  text-decoration: none;
+}
+#about {
+  background-image: url("../images/about-img.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+#about h2, #about p {
+  width: 35%;
+  margin-right: 3rem;
+}
+#about h2 {
+  text-align: center;
+}
+#plants h2{
+  margin: 2rem 0;
+}
+.shop-plants {
+  display: flex;
+  align-items: center;
+  height: 43rem;
+}
+.plants-image {
+  height: 100%;
+  width: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plants-text {
+  width: 50%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plants-text h3, .plants-text p {
+  width: 70%;
+}
+.plants-text h3 {
+  text-align: center;
+  color: #266035;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+.plants-text p {
+  margin: 2rem 0;
+}
+.plants-text a {
+  padding: 1rem 2rem;
+  background-color: #266035;
+  text-align: center;
+  color: #FBFFFB;
+  font-size: 1.7rem;
+}
+#succulents {
+  background-image: url(../images/succulants.jpg);
+}
+#cacti {
+  background-image: url(../images/cacti.jpg);
+}
+#tropicals {
+  background-image: url(../images/tropicals.jpg);
+}
+#contact {
+  background-color: #266035;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  color: #FBFFFB;
+}
+.shop {
+ width: 30rem;
+ margin-bottom: 5%;
+}
+.shop img {
+  width: 100%;
+  text-align: center;
+}
+.contact-text {
+ display: inline-block;
+}
+address p {
   font-size: 2rem;
 }
-
-
-#plants img {
-  width: 50%;
+address a {
+  color: #FBFFFB;
+}
+.contact-text p:first-child {
+  margin-bottom: 3rem;
+}
+h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  padding: 5% 0;
+}
+h5 {
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  margin-bottom: 4rem;
 }
