@@ -49,7 +49,6 @@ table {
 
 /* ----------- RESET ABOVE THIS LINE ---------- */
 
-/* FONTS */
 
 html {
   box-sizing: border-box;
@@ -72,6 +71,8 @@ nav a {
 }
 header {
   background-image: url("../images/header.jpg");
+  width: 100%;
+  max-width: 1200px;
 }
 header, #about {
   height: 55rem;
@@ -80,6 +81,10 @@ header, #about {
   background-size: cover;
 }
 header nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,7 +101,7 @@ header nav div {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 nav img {
@@ -131,6 +136,7 @@ a.button {
   color: #266035;
   font-size: 1.7rem;
   margin-top: 3rem;
+  margin-bottom: 10%;
 }
 a {
   text-decoration: none;
@@ -200,13 +206,15 @@ a {
 }
 #contact {
   background-color: #266035;
+  width: 100%;
+  color: #FBFFFB;
+}
+#contact .backwards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-content: center;
   justify-content: space-evenly;
-  width: 100%;
-  color: #FBFFFB;
 }
 .shop {
  width: 30rem;
@@ -239,3 +247,165 @@ h5 {
   letter-spacing: .3rem;
   margin-bottom: 4rem;
 }
+
+/* MEDIA QUERIES FOR LARGER THAN TABLET */
+@media(min-width: 800px) {
+  html {
+    font-size: 13px;
+  }
+  a.button:hover {
+    background: #266035;
+    color: #FBFFFB;
+  }
+  
+}/* END OF DESKTOP STYLES */
+
+@media(max-width: 550px) {
+  html {
+    font-size: 8px;
+  }
+
+  header {
+    background-image: url("../images/header.jpg");
+    width: 100%;
+    max-width: 1200px;
+  }
+  header, #about {
+    height: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 200%;
+  }
+  header nav {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header nav div {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    margin: 0 0 5% 0;
+  }
+  nav a {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .header-content {
+    height: 47rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  nav img {
+    width: 7rem;
+    margin: 0;
+  }
+  h1 {
+    margin-top: 35%;
+    line-height: 1.5;
+    font-size: 6rem;
+    width: 85%;
+  }
+  h2 {
+    font-size: 4.5rem;
+    text-align: center;
+    padding: 3rem 0;
+    color: #266035
+  }
+  
+  p {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+  
+  a.button {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  #about {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #about h2, #about p {
+    width: 85%;
+    margin-right: 0;
+  }
+  .shop-plants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .plants-image {
+    height: 80vw;
+    width: 85%;
+    margin-bottom: 5%;
+  }
+  .plants-text {
+    width: 85%;
+  }
+  .plants-text h3, .plants-text p {
+    width: 100%;
+  }
+  .plants-text h3 {
+    text-align: center;
+    color: #266035;
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+  .plants-text a {
+    padding: 1.5rem 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 20%;
+  }
+  .backwards div:first-child{
+    order: 2;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop {
+   width: 85%;
+  }
+  .shop img {
+    width: 100%;
+  }
+  .contact-text {
+   width: 85%;
+  }
+  address {
+    margin-bottom: 10%;
+  }
+  address p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  address a {
+    color: #FBFFFB;
+  }
+  .contact-text p:first-child {
+    margin-bottom: 3rem;
+  }
+  h4 {
+    width: 85%;
+    font-size: 5rem;
+    line-height: 1.4;
+  }
+  h5 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+} /* END OF MOBILE STYLES */
